@@ -9,6 +9,7 @@ This logger uses the new [C++20 std::format](https://en.cppreference.com/w/cpp/u
 - Include the folder `code/include` in your project and include the header `Logger/Logger.hpp`
 - Set the Log level by simply defining: `using Logger = eho::CLogger<eho::LogLevel::Warning>`.
 - Then simply use as `Logger::Error("the message with {} formatting", "some")`.
+  - You can enable/disable a specific log by using as `Logger::Error<false>("the message with {} formatting", "some")`. As default the template parameter is true.
 
 Available levels:
 
